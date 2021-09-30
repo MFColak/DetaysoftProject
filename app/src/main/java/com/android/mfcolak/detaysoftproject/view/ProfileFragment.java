@@ -67,7 +67,7 @@ public class ProfileFragment extends Fragment {
             name.setText(userResponse.getResults().get(0).getName().getFirst());
             surname.setText(userResponse.getResults().get(0).getName().getLast());
             email.setText(userResponse.getResults().get(0).getEmail());
-            Util.loadImage(imageView, userResponse.getResults().get(0).getPicture().getThumbnail());
+            Util.loadImage(imageView, userResponse.getResults().get(0).getPicture().getLarge());
         });
     }
 }
